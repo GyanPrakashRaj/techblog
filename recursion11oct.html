@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>TECH-BLOG</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TECH-BLOG">
+    <meta name="author" content="Robogx">    
+    <link rel="shortcut icon" href="favicon.ico"> 
+    
+    <!-- FontAwesome JS-->
+	<script defer src="assets/fontawesome/js/all.min.js"></script>
+    
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/styles/monokai-sublime.min.css">
+    
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme-1.css">
+    
+
+</head> 
+
+<body>
+    
+    <header class="header text-center">	    
+	    <h1 class="blog-name pt-lg-4 mb-0"><a class="no-text-decoration" href="index.html">GYAN PRAKASH</a></h1>
+        
+	    <nav class="navbar navbar-expand-lg navbar-dark" >
+           
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div id="navigation" class="collapse navbar-collapse flex-column" >
+				<div class="profile-section pt-3 pt-lg-0">
+				    <img class="profile-image mb-3 rounded-circle mx-auto" src="assets/images/profile.png" alt="image" >			
+					
+					<div class="bio mb-3">SELF TAUGHT PROGRAMMER<br><a href="https://api.whatsapp.com/send?phone=+917050945881&text=I'm in love with programming.>xd">Connect me</a></div><!--//bio-->
+					<ul class="social-list list-inline py-3 mx-auto">
+			            <li class="list-inline-item"><a href="https://twitter.com/Kali_root_zBUGS?s=09"><i class="fab fa-twitter fa-fw"></i></a></li>
+			            <li class="list-inline-item"><a href="https://www.linkedin.com/in/gyan-p-a20539202/"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
+			            <li class="list-inline-item"><a href="https://github.com/GyanPrakashRaj"><i class="fab fa-github-alt fa-fw"></i></a></li>
+			        </ul><!--//social-list-->
+			        <hr> 
+				</div><!--//profile-section-->
+				
+				<ul class="navbar-nav flex-column text-start">
+					<li class="nav-item">
+					    <a class="nav-link" href="index.html"><i class="fas fa-home fa-fw me-2"></i>Blog Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+					    <a class="nav-link active" href="blog-post.html"><i class="fas fa-bookmark fa-fw me-2"></i>Blog Post</a>
+					</li>
+					<li class="nav-item">
+					    <a class="nav-link" href="about.html"><i class="fas fa-user fa-fw me-2"></i>About Me</a>
+					</li>
+				</ul>
+				
+				<div class="my-2 my-md-3">
+					
+				    <a class="btn btn-primary" href="https://api.whatsapp.com/send?phone=+917050945881&text=I'm in love with programming.>xd" target="_blank">Get in Touch</a>
+				    
+				</div>
+			</div>
+		</nav>
+    </header>
+    
+    <div class="main-wrapper">
+	    
+	    <article class="blog-post px-3 py-5 p-md-5">
+		    <div class="container single-col-max-width">
+			    <header class="blog-post-header">
+				    <h2 class="title mb-2">Understanding Recursion Algorithm</h2>
+				    <div class="meta mb-3"><span class="date">Published 2 days ago</span><span class="time">5 min read</span><span class="comment"><a  class="text-link" href="#">4 comments</a></span></div>
+			    </header>
+			    
+			    <div class="blog-post-body">
+				    <figure class="blog-banner">
+				        <a href="#"><img class="img-fluid" src="assets/images/blog/blog-post-banner.jpg" alt="image"></a>
+				        <!--<figcaption class="mt-2 text-center image-caption">Image Credit: <a class="theme-link" href="http://gyanrobogx.in/" target="_blank"> ( Programming Blogs soon)</a></figcaption>-->
+				    </figure>
+                    <h3 class="mt-5 mb-3">Stack </h3>
+				    <p>Stack is a linear data structure which follows a particular order in which the operations are performed.
+                        A stack is an array or list structure of function calls and parameters used in modern computer programming and CPU architecture. Similar to a stack of plates at a buffet restaurant or cafeteria, elements in a stack are added or removed from the top of the stack, in a “last in first, first out” or LIFO order.
+                    </p>
+                    <h3 class="mt-5 mb-3">Recursion </h3>
+                    <p>Recursion is the process of defining a problem (or the solution to a problem) in terms of (a simpler version of) itself. This can be a very powerful tool in writing algorithms. Recursion comes directly from Mathematics, where there are many examples of expressions written in terms of themselves.
+                    </p>
+                    <h3 class="mt-5 mb-3">Stack and Recursion</h3>
+                    <p>When a function is called, it occupies memory in the stack to store details about the execution of the function. And when the function ends, the memory occupied by it is also released. Now in recursion, as we know a function is called in itself. Hence at every function call, a block of memory is created in the stack to hold the information of the currently executing function. When the function ends, it returns to it’s calling statement written in the outer function i.e., an outer function is resumed from where it stopped</p>
+                    <!--<div id="mntl-sc-block_1-0-10" class="comp mntl-sc-block mntl-sc-block-adslot mntl-block"></div>
+<ul id="mntl-sc-block_1-0-11" class="comp mntl-sc-block mntl-sc-block-html">
+<li>Peek: Allows the inspection of the topmost element on a stack without actually removing the element.</li><li>Swap: Also referred to as “exchange,” the positions of the two top elements of the stack are swapped, the first element becoming the second and the second becoming the top.</li><li>Duplicate: The topmost element is popped from the stack and then pushed back onto the stack twice, creating a duplicate of the original element.</li><li>Rotate: Also referred to as “roll,” specifies the number of elements in a stack which are rotated in their order. For example, rotating the top four elements of a stack would move the topmost element into the fourth position while the next three elements move up one position.</li>-->
+</ul>
+				    <h3 class="mt-5 mb-3">Code Block Example</h3>
+				    <pre>
+					    <code>
+// recursion example C++
+
+#include< bits/stdc++.h >
+using namespace std;
+
+void printFun(int test)
+ {
+	 if (test < 1)
+	  return;
+	    else {
+		cout << test << " ";
+		printFun(test - 1);
+		cout << test << " ";
+		return;
+		}
+ }
+int main()
+{
+   int test = 3;
+   printFun(test);
+}
+// output - 3 2 1 1 2 3			
+					    </code>
+				    </pre>
+                    <h3 class="mt-5 mb-3">Types of Recursion </h3>
+				    <!--<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>-->
+				    <h5 class="my-3">Tailed Recursion</h5>
+				    <ul class="mb-5">
+					  <li class="mb-2">When the last executed statement of a function is the recursive call.</li>
+					  <li class="mb-2">It is possible to keep only the last recursive call on the stack.</li>
+					  <li class="mb-2">Example:</li>
+                      <pre>
+					    <code>
+int sum(int n,int &ans)
+{
+    if(n==0){
+    return ans;
+    }
+    else{
+    ans=ans+n;
+    return sum(n-1,ans);     // last statement to be executed is recursive call
+    }
+}		
+					    </code>
+				    </pre>
+					</ul>
+					<!--<ol class="mb-5">
+					  <li class="mb-2">Lorem ipsum dolor sit amet consectetuer.</li>
+					  <li class="mb-2">Aenean commodo ligula eget dolor.</li>
+					  <li class="mb-2">Aenean massa cum sociis natoque penatibus.</li>
+					</ol>-->
+                    <h5 class="my-3">Non-tailed Recursion</h5>
+                    <ul class="mb-5">
+                        <li class="mb-2">When there are statements left in the function to execute after recursive call statement.</li>
+                        <li class="mb-2">Recursive call will remain in the stack until the end of its evaluation.</li>
+                        <li class="mb-2">Example:</li>
+                        <pre>
+                            <code>
+int sum(int n){
+    if(n==1){
+    return n;
+    }
+    else{
+        int smallerSum=sum(n-1); //recursive call for smaller problem
+        return n+smallerSum;     //statements to be executed after recursive call
+        }
+}
+                            </code>
+                        </pre>
+                    </ul>
+                    
+					<!--<h5 class="my-3">Quote Example:</h5>
+					<blockquote class="blockquote m-lg-5 py-3   ps-4 px-lg-5">
+						<p class="mb-2">You might not think that programmers are artists, but programming is an extremely creative profession. It's logic-based creativity.</p>
+						<footer class="blockquote-footer mt-0">John Romero</footer>
+					</blockquote>-->
+
+
+					<!--<h5 class="my-3">Table Example:</h5>
+					<table class="table table-striped my-5">
+						<thead>
+							<tr>
+								<th scope="col">#</th>
+								<th scope="col">First</th>
+								<th scope="col">Last</th>
+								<th scope="col">Handle</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">1</th>
+								<td>Mark</td>
+								<td>Otto</td>
+								<td>@mdo</td>
+							</tr>
+							<tr>
+								<th scope="row">2</th>
+								<td>Jacob</td>
+								<td>Thornton</td>
+								<td>@fat</td>
+							</tr>
+							<tr>
+								<th scope="row">3</th>
+								<td>Larry</td>
+								<td>the Bird</td>
+								<td>@twitter</td>
+							</tr>
+						</tbody>
+					</table>-->
+					
+                  
+
+
+				    
+				    <h3 class="mt-5 mb-3">Video Example</h3>
+				    <p>Must check out this video I made for you, a tutorial to make recursion more clear to you. 
+                    </p>
+
+				    <iframe width="356" height="200" src="https://www.youtube.com/embed/lsc_r0Mn9NI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    
+                    <h3 class="mt-5 mb-3">Conclusion</h3>
+                    <p><!--<a class="text-link" href="#" target="_blank">WILL BE UPLOADED SOON</a>.--> So, this is all I hope this article brought you more clarity about recursion in programming. I have tried my best to make things all clear. Hope my efforts make inspire you to be more responsive. Thank You.                    </p>
+				    <nav class="blog-nav nav nav-justified my-5">
+                        <a class="nav-link-prev nav-item nav-link rounded-left" href="assets/tasks/task11oct.pdf">Tap and download Practice set for recursion<i class=""></i></a>
+                      </nav>
+                    <!--<div class="ratio ratio-16x9">
+					   <iframe width=”560″ height=”315″ src=”https://www.youtube.com/embed/6HMaEAYa3t4?autoplay=1″ frameborder=”0″ allowfullscreen></iframe>					
+					</div>-->
+				   
+			    </div>
+				    
+				
+				<nav class="blog-nav nav nav-justified my-5">
+				  <a class="nav-link-prev nav-item nav-link rounded-left" href="#">Previous<i class="arrow-prev fas fa-long-arrow-alt-left"></i></a>
+				  <a class="nav-link-next nav-item nav-link rounded-right" href="#">Next<i class="arrow-next fas fa-long-arrow-alt-right"></i></a>
+				</nav>
+				
+
+
+                <h5 class="mb-3">Fav. Tweet:</h5>
+					
+					<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">1969:<br>-what&#39;re you doing with that 2KB of RAM?<br>-sending people to the moon<br><br>2017:<br>-what&#39;re you doing with that 1.5GB of RAM?<br>-running Slack</p>&mdash; I Am Devloper (@iamdevloper) <a href="https://twitter.com/JavaScriptDaily/status/1447370873086922754?t=tnTOU3Y1uKbD-EPVzElxEg&s=19">November 3, 2017</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+				<!--<div class="blog-comments-section">
+					<div id="disqus_thread"></div>
+					<script>
+					    /**
+					     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT 
+					     *  THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR 
+					     *  PLATFORM OR CMS.
+					     *  
+					     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: 
+					     *  https://disqus.com/admin/universalcode/#configuration-variables
+					     */
+					    /*
+					    var disqus_config = function () {
+					        // Replace PAGE_URL with your page's canonical URL variable
+					        this.page.url = PAGE_URL;  
+					        
+					        // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+					        this.page.identifier = PAGE_IDENTIFIER; 
+					    };
+					    */
+					    
+					    (function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
+					        var d = document, s = d.createElement('script');
+					        
+					        // IMPORTANT: Replace 3wmthemes with your forum shortname!
+					        s.src = 'https://3wmthemes.disqus.com/embed.js';
+					        
+					        s.setAttribute('data-timestamp', +new Date());
+					        (d.head || d.body).appendChild(s);
+					    })();
+					</script>
+					<noscript>
+					    Please enable JavaScript to view the 
+					    <a href="https://disqus.com/?ref_noscript" rel="nofollow">
+					        comments powered by Disqus.
+					    </a>
+					</noscript>
+				</div>-->
+				
+		    </div><!--//container-->
+	    </article>
+	    
+	    <section class="promo-section theme-bg-light py-5 text-center">
+		    <div class="container">
+			    <h2 class="title">Promo Section</h2>
+			    <p>This is a promotion section.You may ignore this for a while </p>
+                <figure class="promo-figure">
+			        <a href="https://made4dev.com" target="_blank"><img class="img-fluid" src="assets/images/promo-banner.jpg" alt="image"></a>
+			    </figure>
+		    </div><!--//container-->
+	    </section><!--//promo-section-->
+	    
+	    <footer class="footer text-center py-2 theme-bg-dark">
+		   
+            <small class="copyright">Designed with <i class="fas fa-heart" style="color: #fb866a;"></i> by <a href="https://www.linkedin.com/in/gyan-p-a20539202/" target="_blank">gyanrobogx</a> form SIT</small>
+		   
+	    </footer>
+    
+    </div><!--//main-wrapper-->
+    
+
+        
+       
+    <!-- Javascript -->          
+    <script src="assets/plugins/popper.min.js"></script> 
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script> 
+    
+    <!-- Page Specific JS -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/highlight.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/blog.js"></script> 
+    
+
+</body>
+</html> 
