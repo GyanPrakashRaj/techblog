@@ -100,6 +100,19 @@
 					  <li class="mb-2">Aenean commodo ligula eget dolor.</li>
 					  <li class="mb-2">Aenean massa cum sociis natoque penatibus.</li>
 					</ol>-->
+                    <pre>
+                        <code>
+&lt;p&gt; This text is a paragraph . &lt;/p&gt;
+                        </code>
+                    </pre>
+                    <ul class="mb-5">
+                        <li class="mb-2">Another example of Paired Tag:</li>
+                      </ul>
+                    <pre>
+                        <code>
+&lt;code&gt; text... &lt;/code&gt
+                        </code>
+                    </pre>
     <style> table { 
         margin: 3% auto; 
         width: 100%; 
@@ -169,25 +182,54 @@
                     <p>Unpaired tags are single tags with no closing tag. These tags are also called Singular Tags. These are also called non-container tags because they do not contain any content.
 
                         It is recommended to close the unpaired/singular tags also. But unfortunately, we do not have the closing tag for those. So, an unpaired tag is closed after adding a slash(/) just before the greater than > sign. For example: <br />.
-                        
-                        Look below the list of some Unpaired Tags in HTML. Notice the use of slash(/) in the tags, to close them.</p>
+                     Look below the list of some Unpaired Tags in HTML. Notice the use of slash(/) in the tags, to close them.
+                    </p>
+                    <div>
+                        <style>
+                            .btncls{
+                                background-color:#B80C4D;
+                                border: #2e6da4;
+                                  font-family: Arial, Helvetica,  sans-serif;
+                                font-size: 15px;
+                                color: #fff;
+                                letter-spacing: 1px;
+                                padding: 8px 12px;
+                                font-size: 14px;
+                                font-weight: normal;
+                                
+                                border-radius: 4px;
+                                line-height: 1.5;
+                                text-decoration:none;
+                            }
+                            .btncls:hover{
+                                background-color:#F773A5;
+                                border: #2e6da4;
+                                  font-family: Arial, Helvetica,  sans-serif;
+                                font-size: 15px;
+                                color: #000;
+                                letter-spacing: 1px;
+                                padding: 8px 12px;
+                                font-size: 14px;
+                                font-weight: normal;
+                                
+                                border-radius: 4px;
+                                line-height: 1.5;
+                                text-decoration:none;
+                            }
+                            </style>
+                            <pre>
+                                <code>
+&lt;p&gt; This is a paragraph &lt;/p&gt;<br />
+&lt;hr&gt;<br />
+&lt;i&gt; &lt;b&gt; This is a bold and italicized text &lt;/b&gt; &lt;/i&gt;
+                                </code>
+                            </pre>
+                        <a href="compiler.html" class="btncls">Click to check</a>
+                    </div>
                     <!--<ul class="mb-5">
                         <li class="mb-2">When there are statements left in the function to execute after recursive call statement.</li>
                         <li class="mb-2">Recursive call will remain in the stack until the end of its evaluation.</li>
-                        <li class="mb-2">Example:</li>
-                        <pre>
-                            <code>
-int sum(int n){
-    if(n==1){
-    return n;
-    }
-    else{
-        int smallerSum=sum(n-1); //recursive call for smaller problem
-        return n+smallerSum;     //statements to be executed after recursive call
-        }
-}
-                            </code>
-                        </pre>
+                        <li class="mb-2">Example:</li> 
                     </ul>-->
                     
 					<!--<h5 class="my-3">Quote Example:</h5>
@@ -379,7 +421,6 @@ int sum(int n){
                         <tr><td class="attrhead">&lt;form&gt; Tag Attributes:</td><td>&nbsp;</td></tr>
                         <tr><td class="codeindt">action=&quot;url&quot;</td>	<td>URL of Form Script</td></tr>
                         <tr><td class="codeindt">method=&quot;***&quot;</td>	<td>Method of Form: <code>get, post</code></td></tr>
-                        <tr><td class="codeindt">enctype=&quot;***&quot;</td>	<td>For File Upload: <code>enctype=&quot;multipart/form-data&quot;</code></td></tr>
                         <tr><td class="code">&lt;input&gt; ... &lt;/input&gt;</td><td>Input field within form</td></tr>
                         <tr><td class="attrhead">&lt;input&gt; Tag Attributes:</td><td>&nbsp;</td></tr>
                         <tr><td class="codeindt">type=&quot;***&quot;</td>	<td>Input Field Type: <code>text, password, checkbox, submit</code> etc.</td></tr>
